@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de navegacion</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        body {
+            background: black;
+        }
+        header {
+            background: rgb(8, 114, 244);
+            width: 100%;
+            clear: both;
+            content: '';
+            display: table;
+        }
+        img {
+            width: 120px;
+            height: 50px;
+            float: left;
+            padding: 8px;
+        }
+        .menu {
+            width: 900px;
+            margin: 0 auto;
+        }
+        nav {
+            float: right;
+        }
+        nav ul li {
+            list-style: none;
+            margin-left: 25px;
+            padding: 25px 0;
+            float: left;
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+        }
+        nav ul li a::before{
+            display: block;
+            content: '';
+            width: 0%;
+            background: #444;
+            height: 5px;
+            top: 0%;
+            position: absolute;
+            transition: width 0.5s;
+
+        }
+        nav ul li a:hover::before{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="./img/img.jpg">
+           <!--faltan las url-->
+            <nav>   
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="a">Servicios</a></li>
+                        <li><a href="#">Redes</a></li>
+                    </ul>
+            </nav>        
+        </div>
+    </header>
+</body>
+</html>
